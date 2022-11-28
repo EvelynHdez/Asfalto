@@ -1,0 +1,233 @@
+body{
+    font-family: 'Abril Fatface', cursive;
+    font-family:'Times New Roman', Times, serif; 
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+.formulario{
+background: white;
+margin-top: 150px;
+padding: 3px;
+}
+h1{
+text-align: center;
+color: purple;
+font-size: 40px;
+}
+
+input[type="text"],
+input[type="password"]{
+font-size: 20px;
+width: 82%;
+padding: 10px;
+border: none;
+}
+.input-contenedor{
+margin-bottom: 15px;
+border: 1px solid #aaa;
+}
+.icon{
+min-width: 100px;
+text-align: center;
+color: #999;
+}
+.btn{
+border: none;
+width: 95%;
+height: 40px;
+color: black;
+font-size: 18px;
+background:purple;
+font-family: 'Times New Roman', Times, serif;
+border-radius: 25px;
+cursor: pointer;
+border: 1px solid white;
+margin: auto;
+}
+a:hover{
+background-color: transparent;
+border: 2px solid purple;
+color: purple;
+}
+p{
+text-align: center;
+}
+.link{
+text-decoration: none;
+color:#1a2537;
+font-weight: 600;
+}
+.link:hover{
+color:cadetblue;
+}
+@media(min-width:768px)
+{
+.formulario{
+    margin:auto;
+    width:500px;
+    border-radius: 2%;
+}
+}
+
+h1{
+    text-align: center;
+    color: black;
+}
+h4{
+    font-size: 16px;
+    font-weight: 700;
+}
+header{
+    padding:20px 0 0 0;
+    text-align: center;
+}
+@media(min-width : 750px)
+{
+     header
+     {
+        text-align: right;
+     }
+}
+.borrar-producto{
+    background-color: mediumorchid;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color:sienna;
+    font-weight: bold;
+}
+nav{
+    margin:3rem 0 8rem 0;
+    background-color: black;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+}
+nav a{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 3rem;
+    color:purple;
+    text-transform: uppercase;
+}
+nav a:hover{
+    color: purple;
+}
+
+ul{
+    list-style: none;
+}
+.hero{
+    background-image: url(/IMG/4.jpg);
+    height: 551px;
+}
+.encabezado{
+    margin: 30px 0;
+    color:white;
+}
+.submenu{
+    position: relative;
+}
+.submenu #bolsa{
+    display: none;
+}
+.submenu:hover #bolsa{
+    display: block;
+    color: white;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: 1;
+    background:pink;
+    padding: 20px;
+}
+.vacio{
+    padding: 10px;
+    background-color: pink;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+}
+.button{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+.contenido-hero{
+margin-top: 80px;
+color: white;
+font-family:'Times New Roman', Times, serif;
+}
+.contenido-hero form{
+    position: relative;
+    margin-bottom: 0;
+}
+.contenido-hero form #buscador{
+    height: 50px;
+    margin-bottom: 0;
+}
+.contenido-hero form .submit-buscador{
+    position: absolute;
+    right: 0;
+    top:0;
+    height: 100%;
+    padding: 0;
+    display: block;
+    text-indent: -9999px;
+    background-position:right center;
+    background-repeat: no-repeat;
+    border: none;
+} 
+#lista-productos .row{
+    margin-bottom: 20px;
+}
+.agregar-carrito{
+    margin:10px 0;
+}
+.card{
+    text-align: center;
+    border: 1px solid gray;
+    background: black;
+}
+@media(min-width:550px){
+    .card{
+        text-align: left;
+    }
+}
+.info-card{
+    padding: 10px 20px;
+    color: white;
+}
+.info-card p,
+.card h4{
+    margin-bottom: 5px;
+}
+.info-card precio{
+    text-decoration: light line-through;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.info-card .precio span{
+font-weight: 700;
+font-size: 22px;
+}
+
+
+
+
+
+.footer{
+    background-color:black;
+    padding: 3.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    padding-bottom: 3rem;
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+}
+
+
+
+
