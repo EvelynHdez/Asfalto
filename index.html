@@ -7,36 +7,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ASFALTO</title>
     <link rel="stylesheet" href="/CSS/style.css">
-    <link rel="stylesheet" href="/CSS/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="four columns">
+                    <a href="/index.html"></a>
+                    <h1><img src="/PROYECTO FRONT/logo.jpg" alt="" width="50%" ></h1>
+                </div>
+    </header>
 
-                <header class="header">
-                    <div class="container">
-                        <div class="row">
-                            <div class="four columns">
-                                <a href="/index.html"></a>
-                                <h1><img src="/PROYECTO FRONT/logo.jpg" alt="" width="50%" ></h1>
-                            </div>
-                        </header>
-                <form class="formulario">
-                    <h1>Registrate</h1>
-                    <div class="contenedor">
-                        <div class="input-contenedor">
-                            <i class='bx bxs-envelope'></i>
-                            <input type="text" placeholder="Correo electrónico">
-                        </div>
-            
-                        <div class="input-contenedor">
-                            <i class='bx bx-low-vision'></i>
-                            <input type="password" placeholder="Contraseña">
-                        </div>
-                        
-                        <a class="btn" href="/inicio.html" target="_blank">Login</a>
-                        <p>Al registrarse, aceptas nuestras Condiciones de uso y Política de Privacidad</p>
-                       <p>¿No tienes una cuenta? <a class="link" href="/registro.html">Registrate</a></p>
-                    </div>
-                </form>
+	<main>
+		<form action="" class="formulario" id="formulario">
+            <!-- Grupo: Correo Electronico -->
+			<div class="formulario__grupo" id="grupo__correo">
+				<label for="correo" class="formulario__label">Correo Electrónico</label>
+				<div class="formulario__grupo-input">
+					<input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+			</div>
+
+            <!-- Grupo: Contraseña -->
+			<div class="formulario__grupo" id="grupo__password">
+				<label for="password" class="formulario__label">Contraseña</label>
+				<div class="formulario__grupo-input">
+					<input type="password" class="formulario__input" name="password" id="password">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+			</div>
+
+			<!-- Grupo: Contraseña 2 -->
+			<div class="formulario__grupo" id="grupo__password2">
+				<label for="password2" class="formulario__label">Repetir Contraseña</label>
+				<div class="formulario__grupo-input">
+					<input type="password" class="formulario__input" name="password2" id="password2">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
+			</div>
+
+			<!-- Grupo: Terminos y Condiciones -->
+			<div class="formulario__grupo" id="grupo__terminos">
+				<label class="formulario__label">
+					<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+					Acepto los Terminos y Condiciones
+				</label>
+			</div>
+
+			<div class="formulario__grupo formulario__grupo-btn-enviar">
+                              
+                <a  href="/inicio.html" target="_blank">Login</a>
+                <p>Al registrarse, aceptas nuestras Condiciones de uso y Política de Privacidad</p>
+               <p>¿No tienes una cuenta? <a class="link" href="/registro.html">Registrate</a></p>
+				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito"></p>
+			</div>
+		</form>
+	</main>
+
+	<script src="js/formulario2.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 </body>
